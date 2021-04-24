@@ -1,10 +1,10 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="author" content="Ndukwu Pius">
     <meta name="generator" content="Hugo 0.79.0">
     <title>Home</title>
 
@@ -13,7 +13,7 @@
     
 
     <!-- Bootstrap core CSS -->
-<link href="bootstrap.min.css" rel="stylesheet">
+<<link href="bootstrap.min.css" rel="stylesheet">
 
     <style>
       .bd-placeholder-img {
@@ -29,60 +29,77 @@
           font-size: 3.5rem;
         }
       }
+	  .periodWrapper{
+	  background-color: #fc6444;
+	  font-size: 15px;
+	  width: 25%;
+	  display: inline-block;
+      margin-bottom: 15px;
+      border-radius: 5px;
+	  color: black;
+	  text-align: center;
+	  font-weight: bold;
+	  }
+	  .period{
+	  font-size: 26px;
+	  display: block;
+	  text-align: center;
+	  color: black;
+	  padding-top: 10px;
+	  }
+	  .w100{
+	  width: 100%;
+	  }
+	  @media(max-width: 540px){
+	  .periodWrapper{
+	  width: 100%
+	  }
+	  
+	  }
+
+	  
     </style>
 
     
     <!-- Custom styles for this template -->
-    <link href="styles.css" rel="stylesheet">
+	<link href="styles.css" rel="stylesheet">
   </head>
   <body onload="getPeriods()">
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">Contact us/Donate</a>
-        </li>
-    
+    <img src="pius.png" alt="Pius Electronics" class="bg-image" > 
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+	  
+		  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			<ul class="navbar-nav me-auto mb-2 mb-md-0">
+			  <li class="nav-item active">
+				<a class="nav-link" aria-current="page" href="home.html">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="help.html">User manual</a>
+            </li>
         
-<li class="nav-item dropdown">
-	<a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="true">Tools</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-
-		<li><a class="dropdown-item" href="Update">Update</a></li>
-
-		<li><a class="dropdown-item" href="delete">Delete period(s)</a></li>
-
-		<li><a class="dropdown-item" href="help">User manual</a></li>
-          
-	</ul>
-        
-</li>
-     
-</ul>
-      
-<form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="timeUpdate.html">Update</a></li>
+                <li><a class="dropdown-item" href="delete.html">Delete period(s)</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+				</ul>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
 
 <main class="container">
 
   <div class="starter-template text-center py-5 px-3">
     
-<h1>Welcome</h1>
+
     
 
   
@@ -91,312 +108,311 @@
 <div class="container" >
       
       <p class="lead" >
-	  <h1> Monday </h1>
-	  <div class="row">
-	  <div class="col">
-	  <span> 1st period:&nbsp;</span><span class ="period" id="Mon1">21:40 </span> 
+	  <h2> Monday </h2>
+	  <div class="w100">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon1">--:-- </span> <span> 1st period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 2nd period:&nbsp;</span><span class ="period" id="Mon2">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon2">--:-- </span> <span> 2nd period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 3rd period:&nbsp;</span><span class ="period" id="Mon3">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon3">--:-- </span><span> 3rd period:&nbsp;</span>
 	  </div>
 </div>	  
 
-<!-- new row -->
-	  <div class="row">
-	  <div class="col">
-	  <span> 4th period:&nbsp;</span><span class ="period" id="Mon4">21:40 </span> 
+<!-- new  -->
+	  <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon4">--:-- </span> <span> 4th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 5th period:&nbsp;</span><span class ="period" id="Mon5">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon5">--:-- </span> <span> 5th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 6th period:&nbsp;</span><span class ="period" id="Mon6">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon6">--:-- </span><span> 6th period:&nbsp;</span>
 	  </div>
 </div>	   
- <!-- new row -->
-      <div class="row">
-	  <div class="col">
-	  <span> 7th period:&nbsp;</span><span class ="period" id="Mon7">21:40 </span> 
+ <!-- new  -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon7">--:-- </span> <span> 7th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 8th period:&nbsp;</span><span class ="period" id="Mon8">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon8">--:-- </span> <span> 8th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 9th period:&nbsp;</span><span class ="period" id="Mon9">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon9">--:-- </span><span> 9th period:&nbsp;</span>
 	  </div>
 </div>	 
 
-<!-- new row  -->
-      <div class="row">
-	  <div class="col">
-	  <span> 10th period:&nbsp;</span><span class ="period" id="Mon10">21:40 </span> 
+<!-- new   -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon10">--:-- </span> <span> 10th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 11th period:&nbsp;</span><span class ="period" id="Mon11">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon11">--:-- </span> <span> 11th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 12th period:&nbsp;</span><span class ="period" id="Mon12">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon12">--:-- </span><span> 12th period:&nbsp;</span>
 	  </div>
 </div>	  
-<!-- new row  -->
-<div class="row">
-	  <div class="col">
-	  <span> 13th period:&nbsp;</span><span class ="period" id="Mon13">21:40 </span> 
+<!-- new   -->
+<div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Mon13">--:-- </span><span> 13th period:&nbsp;</span> 
 	  </div>
 	  </p>
 	  
 	  <p class="lead" >
-	  <h1> Tuesday </h1>
-	  <div class="row">
-	  <div class="col">
-	  <span> 1st period:&nbsp;</span><span class ="period" id="Tue1">21:40 </span> 
+	  <h2> Tuesday </h2>
+	  <div class="w100">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue1">--:-- </span> <span> 1st period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 2nd period:&nbsp;</span><span class ="period" id="Tue2">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue2">--:-- </span> <span> 2nd period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 3rd period:&nbsp;</span><span class ="period" id="Tue3">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue3">--:-- </span><span> 3rd period:&nbsp;</span>
 	  </div>
 </div>	  
 
-<!-- new row -->
-	  <div class="row">
-	  <div class="col">
-	  <span> 4th period:&nbsp;</span><span class ="period" id="Tue4">21:40 </span> 
+<!-- new  -->
+	  <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue4">--:-- </span> <span> 4th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 5th period:&nbsp;</span><span class ="period" id="Tue5">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue5">--:-- </span> <span> 5th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 6th period:&nbsp;</span><span class ="period" id="Tue6">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue6">--:-- </span><span> 6th period:&nbsp;</span>
 	  </div>
 </div>	   
- <!-- new row -->
-      <div class="row">
-	  <div class="col">
-	  <span> 7th period:&nbsp;</span><span class ="period" id="Tue7">21:40 </span> 
+ <!-- new  -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue7">--:-- </span> <span> 7th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 8th period:&nbsp;</span><span class ="period" id="Tue8">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue8">--:-- </span> <span> 8th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 9th period:&nbsp;</span><span class ="period" id="Tue9">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue9">--:-- </span><span> 9th period:&nbsp;</span>
 	  </div>
 </div>	 
 
-<!-- new row  -->
-      <div class="row">
-	  <div class="col">
-	  <span> 10th period:&nbsp;</span><span class ="period" id="Tue10">21:40 </span> 
+<!-- new   -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue10">--:-- </span> <span> 10th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 11th period:&nbsp;</span><span class ="period" id="Tue11">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue11">--:-- </span> <span> 11th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 12th period:&nbsp;</span><span class ="period" id="Tue12">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue12">--:-- </span><span> 12th period:&nbsp;</span>
 	  </div>
 </div>	  
-<!-- new row  -->
-<div class="row">
-	  <div class="col">
-	  <span> 13th period:&nbsp;</span><span class ="period" id="Tue13">21:40 </span> 
+<!-- new   -->
+<div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Tue13">--:-- </span><span> 13th period:&nbsp;</span> 
 	  </div>
 	  </p>
 	  
 	  <p class="lead" >
-	  <h1> Wednesday </h1>
-	  <div class="row">
-	  <div class="col">
-	  <span> 1st period:&nbsp;</span><span class ="period" id="Wed1">21:40 </span> 
+	  <h2> Wednesday </h2>
+	  <div class="w100">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed1">--:-- </span> <span> 1st period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 2nd period:&nbsp;</span><span class ="period" id="Wed2">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed2">--:-- </span> <span> 2nd period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 3rd period:&nbsp;</span><span class ="period" id="Wed3">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed3">--:-- </span><span> 3rd period:&nbsp;</span>
 	  </div>
 </div>	  
 
-<!-- new row -->
-	  <div class="row">
-	  <div class="col">
-	  <span> 4th period:&nbsp;</span><span class ="period" id="Wed4">21:40 </span> 
+<!-- new  -->
+	  <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed4">--:-- </span> <span> 4th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 5th period:&nbsp;</span><span class ="period" id="Wed5">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed5">--:-- </span> <span> 5th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 6th period:&nbsp;</span><span class ="period" id="Wed6">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed6">--:-- </span><span> 6th period:&nbsp;</span>
 	  </div>
 </div>	   
- <!-- new row -->
-      <div class="row">
-	  <div class="col">
-	  <span> 7th period:&nbsp;</span><span class ="period" id="Wed7">21:40 </span> 
+ <!-- new  -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed7">--:-- </span> <span> 7th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 8th period:&nbsp;</span><span class ="period" id="Wed8">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed8">--:-- </span> <span> 8th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 9th period:&nbsp;</span><span class ="period" id="Wed9">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed9">--:-- </span><span> 9th period:&nbsp;</span>
 	  </div>
 </div>	 
 
-<!-- new row  -->
-      <div class="row">
-	  <div class="col">
-	  <span> 10th period:&nbsp;</span><span class ="period" id="Wed10">21:40 </span> 
+<!-- new   -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed10">--:-- </span> <span> 10th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 11th period:&nbsp;</span><span class ="period" id="Wed11">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed11">--:-- </span> <span> 11th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 12th period:&nbsp;</span><span class ="period" id="Wed12">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed12">--:-- </span><span> 12th period:&nbsp;</span>
 	  </div>
 </div>	  
-<!-- new row  -->
-<div class="row">
-	  <div class="col">
-	  <span> 13th period:&nbsp;</span><span class ="period" id="Wed13">21:40 </span> 
+<!-- new   -->
+<div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Wed13">--:-- </span><span> 13th period:&nbsp;</span> 
 	  </div>
 	  </p>
 	  
 	  <p class="lead" >
-	  <h1> Thursday </h1>
-	  <div class="row">
-	  <div class="col">
-	  <span> 1st period:&nbsp;</span><span class ="period" id="Thu1">21:40 </span> 
+	  <h2> Thursday </h2>
+	  <div class="w100">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu1">--:-- </span> <span> 1st period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 2nd period:&nbsp;</span><span class ="period" id="Thu2">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu2">--:-- </span> <span> 2nd period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 3rd period:&nbsp;</span><span class ="period" id="Thu3">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu3">--:-- </span><span> 3rd period:&nbsp;</span>
 	  </div>
 </div>	  
 
-<!-- new row -->
-	  <div class="row">
-	  <div class="col">
-	  <span> 4th period:&nbsp;</span><span class ="period" id="Thu4">21:40 </span> 
+<!-- new  -->
+	  <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu4">--:-- </span> <span> 4th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 5th period:&nbsp;</span><span class ="period" id="Thu5">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu5">--:-- </span> <span> 5th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 6th period:&nbsp;</span><span class ="period" id="Thu6">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu6">--:-- </span><span> 6th period:&nbsp;</span>
 	  </div>
 </div>	   
- <!-- new row -->
-      <div class="row">
-	  <div class="col">
-	  <span> 7th period:&nbsp;</span><span class ="period" id="Thu7">21:40 </span> 
+ <!-- new  -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu7">--:-- </span> <span> 7th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 8th period:&nbsp;</span><span class ="period" id="Thu8">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu8">--:-- </span> <span> 8th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 9th period:&nbsp;</span><span class ="period" id="Thu9">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu9">--:-- </span><span> 9th period:&nbsp;</span>
 	  </div>
 </div>	 
 
-<!-- new row  -->
-      <div class="row">
-	  <div class="col">
-	  <span> 10th period:&nbsp;</span><span class ="period" id="Thu10">21:40 </span> 
+<!-- new   -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu10">--:-- </span> <span> 10th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 11th period:&nbsp;</span><span class ="period" id="Thu11">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu11">--:-- </span> <span> 11th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 12th period:&nbsp;</span><span class ="period" id="Thu12">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu12">--:-- </span><span> 12th period:&nbsp;</span>
 	  </div>
 </div>	  
-<!-- new row  -->
-<div class="row">
-	  <div class="col">
-	  <span> 13th period:&nbsp;</span><span class ="period" id="Thu13">21:40 </span> 
+<!-- new   -->
+<div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Thu13">--:-- </span><span> 13th period:&nbsp;</span> 
 	  </div>
 	  </p>
-	  
 	  <p class="lead" >
-	  <h1> Friday </h1>
-	  <div class="row">
-	  <div class="col">
-	  <span> 1st period:&nbsp;</span><span class ="period" id="Fri1">21:40 </span> 
+	  <h2> Friday </h2>
+	  <div class="w100">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri1">--:-- </span> <span> 1st period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 2nd period:&nbsp;</span><span class ="period" id="Fri2">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri2">--:-- </span> <span> 2nd period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 3rd period:&nbsp;</span><span class ="period" id="Fri3">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri3">--:-- </span><span> 3rd period:&nbsp;</span>
 	  </div>
 </div>	  
 
-<!-- new row -->
-	  <div class="row">
-	  <div class="col">
-	  <span> 4th period:&nbsp;</span><span class ="period" id="Fri4">21:40 </span> 
+<!-- new  -->
+	  <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri4">--:-- </span> <span> 4th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 5th period:&nbsp;</span><span class ="period" id="Fri5">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri5">--:-- </span> <span> 5th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 6th period:&nbsp;</span><span class ="period" id="Fri6">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri6">--:-- </span><span> 6th period:&nbsp;</span>
 	  </div>
 </div>	   
- <!-- new row -->
-      <div class="row">
-	  <div class="col">
-	  <span> 7th period:&nbsp;</span><span class ="period" id="Fri7">21:40 </span> 
+ <!-- new  -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri7">--:-- </span> <span> 7th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 8th period:&nbsp;</span><span class ="period" id="Fri8">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri8">--:-- </span> <span> 8th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 9th period:&nbsp;</span><span class ="period" id="Fri9">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri9">--:-- </span><span> 9th period:&nbsp;</span>
 	  </div>
 </div>	 
 
-<!-- new row  -->
-      <div class="row">
-	  <div class="col">
-	  <span> 10th period:&nbsp;</span><span class ="period" id="Fri10">21:40 </span> 
+<!-- new   -->
+      <div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri10">--:-- </span> <span> 10th period:&nbsp;</span>
 	  </div>
 	  
-	  <div class="col">
-	  <span> 11th period:&nbsp;</span><span class ="period" id="Fri11">21:40 </span> 
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri11">--:-- </span> <span> 11th period:&nbsp;</span>
 	  </div>
-	  <div class="col">
-	  <span> 12th period:&nbsp;</span><span class ="period" id="Fri12">21:40 </span>
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri12">--:-- </span><span> 12th period:&nbsp;</span>
 	  </div>
 </div>	  
-<!-- new row  -->
-<div class="row">
-	  <div class="col">
-	  <span> 13th period:&nbsp;</span><span class ="period" id="Fri13">21:40 </span> 
+<!-- new   -->
+<div class="">
+	  <div class=" periodWrapper">
+	  <span class ="period" id="Fri13">--:-- </span><span> 13th period:&nbsp;</span> 
 	  </div>
 	  </p>
 </div>
@@ -406,6 +422,8 @@
     
 
 <script src="bootstrap.bundle.min.js"></script>
+
+
 <script>
 function getPeriods(){
 var xhttp = new XMLHttpRequest();
@@ -416,92 +434,87 @@ var Array = [];
 xhttp.onreadystatechange=
        function(){
 	   if(this.readyState ==4 && this.status == 200){
-	   <!-- periodsJson=this.responseText; -->
+	   
 	    myObj= JSON.parse(this.responseText);
 	   console.log(myObj);
-	   <!-- for(var i in myObj){    -->
-	   <!-- Array.push(myObj[i]) -->
-	   <!-- var x= document.getElementsByClassName("period")[i].id; -->
-	   <!-- console.log(x); -->
-	    <!-- document.getElementById(String(x)).innerHTML = myObj.String(x); -->
-	   <!-- } -->
-	    document.getElementById("Mon1").innerHTML = myObj.Mon1;
-		document.getElementById("Mon2").innerHTML = myObj.Mon2;
-		document.getElementById("Mon3").innerHTML = myObj.Mon3;
-		document.getElementById("Mon4").innerHTML = myObj.Mon4;
-		document.getElementById("Mon5").innerHTML = myObj.Mon5;
-		document.getElementById("Mon6").innerHTML = myObj.Mon6;
-		document.getElementById("Mon7").innerHTML = myObj.Mon7;
-		document.getElementById("Mon8").innerHTML = myObj.Mon8;
-		document.getElementById("Mon9").innerHTML = myObj.Mon9;
-		document.getElementById("Mon10").innerHTML = myObj.Mon10;
-		document.getElementById("Mon11").innerHTML = myObj.Mon11;
-		document.getElementById("Mon12").innerHTML = myObj.Mon12;
-		document.getElementById("Mon13").innerHTML = myObj.Mon13;
+	  
+	    document.getElementById("Mon1").innerHTML = myObj.Mon1 ?? "not set";
+		document.getElementById("Mon2").innerHTML = myObj.Mon2 ?? "not set";
+		document.getElementById("Mon3").innerHTML = myObj.Mon3 ?? "not set";
+		document.getElementById("Mon4").innerHTML = myObj.Mon4 ?? "not set";
+		document.getElementById("Mon5").innerHTML = myObj.Mon5 ?? "not set";
+		document.getElementById("Mon6").innerHTML = myObj.Mon6 ?? "not set";
+		document.getElementById("Mon7").innerHTML = myObj.Mon7 ?? "not set";
+		document.getElementById("Mon8").innerHTML = myObj.Mon8 ?? "not set";
+		document.getElementById("Mon9").innerHTML = myObj.Mon9 ?? "not set";
+		document.getElementById("Mon10").innerHTML = myObj.Mon10 ?? "not set";
+		document.getElementById("Mon11").innerHTML = myObj.Mon11 ?? "not set";
+		document.getElementById("Mon12").innerHTML = myObj.Mon12 ?? "not set";
+		document.getElementById("Mon13").innerHTML = myObj.Mon13 ?? "not set";
 		
 		<!-- Tuesday -->
 		
-	    document.getElementById("Tue1").innerHTML = myObj.Tue1;
-		document.getElementById("Tue2").innerHTML = myObj.Tue2;
-		document.getElementById("Tue3").innerHTML = myObj.Tue3;
-		document.getElementById("Tue4").innerHTML = myObj.Tue4;
-		document.getElementById("Tue5").innerHTML = myObj.Tue5;
-		document.getElementById("Tue6").innerHTML = myObj.Tue6;
-		document.getElementById("Tue7").innerHTML = myObj.Tue7;
-		document.getElementById("Tue8").innerHTML = myObj.Tue8;
-		document.getElementById("Tue9").innerHTML = myObj.Tue9;
-		document.getElementById("Tue10").innerHTML = myObj.Tue10;
-		document.getElementById("Tue11").innerHTML = myObj.Tue11;
-		document.getElementById("Tue12").innerHTML = myObj.Tue12;
-		document.getElementById("Tue13").innerHTML = myObj.Tue13;
+	    document.getElementById("Tue1").innerHTML = myObj.Tue1 ?? "not set";
+		document.getElementById("Tue2").innerHTML = myObj.Tue2 ?? "not set";
+		document.getElementById("Tue3").innerHTML = myObj.Tue3 ?? "not set";
+		document.getElementById("Tue4").innerHTML = myObj.Tue4 ?? "not set";
+		document.getElementById("Tue5").innerHTML = myObj.Tue5 ?? "not set";
+		document.getElementById("Tue6").innerHTML = myObj.Tue6 ?? "not set";
+		document.getElementById("Tue7").innerHTML = myObj.Tue7 ?? "not set";
+		document.getElementById("Tue8").innerHTML = myObj.Tue8 ?? "not set";
+		document.getElementById("Tue9").innerHTML = myObj.Tue9 ?? "not set";
+		document.getElementById("Tue10").innerHTML = myObj.Tue10 ?? "not set";
+		document.getElementById("Tue11").innerHTML = myObj.Tue11 ?? "not set";
+		document.getElementById("Tue12").innerHTML = myObj.Tue12 ?? "not set";
+		document.getElementById("Tue13").innerHTML = myObj.Tue13 ?? "not set";
 		
 		<!-- Wednesday -->
 		
-	    document.getElementById("Wed1").innerHTML = myObj.Wed1;
-		document.getElementById("Wed2").innerHTML = myObj.Wed2;
-		document.getElementById("Wed3").innerHTML = myObj.Wed3;
-		document.getElementById("Wed4").innerHTML = myObj.Wed4;
-		document.getElementById("Wed5").innerHTML = myObj.Wed5;
-		document.getElementById("Wed6").innerHTML = myObj.Wed6;
-		document.getElementById("Wed7").innerHTML = myObj.Wed7;
-		document.getElementById("Wed8").innerHTML = myObj.Wed8;
-		document.getElementById("Wed9").innerHTML = myObj.Wed9;
-		document.getElementById("Wed10").innerHTML = myObj.Wed10;
-		document.getElementById("Wed11").innerHTML = myObj.Wed11;
-		document.getElementById("Wed12").innerHTML = myObj.Wed12;
-		document.getElementById("Wed13").innerHTML = myObj.Wed13;
+	    document.getElementById("Wed1").innerHTML = myObj.Wed1 ?? "not set";
+		document.getElementById("Wed2").innerHTML = myObj.Wed2 ?? "not set";
+		document.getElementById("Wed3").innerHTML = myObj.Wed3 ?? "not set";
+		document.getElementById("Wed4").innerHTML = myObj.Wed4 ?? "not set";
+		document.getElementById("Wed5").innerHTML = myObj.Wed5 ?? "not set";
+		document.getElementById("Wed6").innerHTML = myObj.Wed6 ?? "not set";
+		document.getElementById("Wed7").innerHTML = myObj.Wed7 ?? "not set";
+		document.getElementById("Wed8").innerHTML = myObj.Wed8 ?? "not set";
+		document.getElementById("Wed9").innerHTML = myObj.Wed9 ?? "not set";
+		document.getElementById("Wed10").innerHTML = myObj.Wed10 ?? "not set";
+		document.getElementById("Wed11").innerHTML = myObj.Wed11 ?? "not set";
+		document.getElementById("Wed12").innerHTML = myObj.Wed12 ?? "not set";
+		document.getElementById("Wed13").innerHTML = myObj.Wed13 ?? "not set";
 		
 		<!-- Thursday -->
 		
-	    document.getElementById("Thu1").innerHTML = myObj.Thu1;
-		document.getElementById("Thu2").innerHTML = myObj.Thu2;
-		document.getElementById("Thu3").innerHTML = myObj.Thu3;
-		document.getElementById("Thu4").innerHTML = myObj.Thu4;
-		document.getElementById("Thu5").innerHTML = myObj.Thu5;
-		document.getElementById("Thu6").innerHTML = myObj.Thu6;
-		document.getElementById("Thu7").innerHTML = myObj.Thu7;
-		document.getElementById("Thu8").innerHTML = myObj.Thu8;
-		document.getElementById("Thu9").innerHTML = myObj.Thu9;
-		document.getElementById("Thu10").innerHTML = myObj.Thu10;
-		document.getElementById("Thu11").innerHTML = myObj.Thu11;
-		document.getElementById("Thu12").innerHTML = myObj.Thu12;
-		document.getElementById("Thu13").innerHTML = myObj.Thu13;
+	    document.getElementById("Thu1").innerHTML = myObj.Thu1 ?? "not set";
+		document.getElementById("Thu2").innerHTML = myObj.Thu2 ?? "not set";
+		document.getElementById("Thu3").innerHTML = myObj.Thu3 ?? "not set";
+		document.getElementById("Thu4").innerHTML = myObj.Thu4 ?? "not set";
+		document.getElementById("Thu5").innerHTML = myObj.Thu5 ?? "not set";
+		document.getElementById("Thu6").innerHTML = myObj.Thu6 ?? "not set";
+		document.getElementById("Thu7").innerHTML = myObj.Thu7 ?? "not set";
+		document.getElementById("Thu8").innerHTML = myObj.Thu8 ?? "not set";
+		document.getElementById("Thu9").innerHTML = myObj.Thu9 ?? "not set";
+		document.getElementById("Thu10").innerHTML = myObj.Thu10 ?? "not set";
+		document.getElementById("Thu11").innerHTML = myObj.Thu11 ?? "not set";
+		document.getElementById("Thu12").innerHTML = myObj.Thu12 ?? "not set";
+		document.getElementById("Thu13").innerHTML = myObj.Thu13 ?? "not set";
 		
 		<!-- Friday -->
 		
-	    document.getElementById("Fri1").innerHTML = myObj.Fri1;
-		document.getElementById("Fri2").innerHTML = myObj.Fri2;
-		document.getElementById("Fri3").innerHTML = myObj.Fri3;
-		document.getElementById("Fri4").innerHTML = myObj.Fri4;
-		document.getElementById("Fri5").innerHTML = myObj.Fri5;
-		document.getElementById("Fri6").innerHTML = myObj.Fri6;
-		document.getElementById("Fri7").innerHTML = myObj.Fri7;
-		document.getElementById("Fri8").innerHTML = myObj.Fri8;
-		document.getElementById("Fri9").innerHTML = myObj.Fri9;
-		document.getElementById("Fri10").innerHTML = myObj.Fri10;
-		document.getElementById("Fri11").innerHTML = myObj.Fri11;
-		document.getElementById("Fri12").innerHTML = myObj.Fri12;
-		document.getElementById("Fri13").innerHTML = myObj.Fri13;
+	    document.getElementById("Fri1").innerHTML = myObj.Fri1 ?? "not set";
+		document.getElementById("Fri2").innerHTML = myObj.Fri2 ?? "not set";
+		document.getElementById("Fri3").innerHTML = myObj.Fri3 ?? "not set";
+		document.getElementById("Fri4").innerHTML = myObj.Fri4 ?? "not set";
+		document.getElementById("Fri5").innerHTML = myObj.Fri5 ?? "not set";
+		document.getElementById("Fri6").innerHTML = myObj.Fri6 ?? "not set";
+		document.getElementById("Fri7").innerHTML = myObj.Fri7 ?? "not set";
+		document.getElementById("Fri8").innerHTML = myObj.Fri8 ?? "not set";
+		document.getElementById("Fri9").innerHTML = myObj.Fri9 ?? "not set";
+		document.getElementById("Fri10").innerHTML = myObj.Fri10 ?? "not set";
+		document.getElementById("Fri11").innerHTML = myObj.Fri11 ?? "not set";
+		document.getElementById("Fri12").innerHTML = myObj.Fri12 ?? "not set";
+		document.getElementById("Fri13").innerHTML = myObj.Fri13 ?? "not set";
 		
 	   console.log("success");   
 	   } 

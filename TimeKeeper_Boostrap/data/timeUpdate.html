@@ -28,7 +28,29 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
+		
       }
+	  label{
+	  color: black;
+    display: block;
+	  }
+
+    .text {
+    flex: 1 1 calc(100% / 3);
+    max-width: calc(100% / 3);
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.periods{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.text input{
+  width: 80%;
+  margin-top: 5px;
+}
     </style>
 
     
@@ -36,39 +58,35 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">Contact us/Donate</a>
-        </li>
-    
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="Update">Update</a></li>
-            <li><a class="dropdown-item" href="delete">Delete period(s)</a></li>
-            <li><a class="dropdown-item" href="help">User manual</a></li>
-          </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    <img src="pius.png" alt="Pius Electronics" class="bg-image" > 
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+     <div class="container-fluid">
+       <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+   
+       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+         <ul class="navbar-nav me-auto mb-2 mb-md-0">
+           <li class="nav-item active">
+             <a class="nav-link" aria-current="page" href="home.html">Home</a>
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="help.html">User manual</a>
+          </li>
+      
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+            <ul class="dropdown-menu" aria-labelledby="dropdown01">
+              <li><a class="dropdown-item" href="timeUpdate.html">Update</a></li>
+              <li><a class="dropdown-item" href="delete.html">Delete period(s)</a></li>
+              <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+     </div>
+   </nav>
 
 <main class="container">
 
@@ -81,369 +99,390 @@
       <form action= 'setting' method="GET">
 <p class="lead"> 
     <h2> Monday </h1>
-  <div class= "form-group">
-   <label for ="Mon1">Mon 1st Period:</label>
+  <div class= "periods">
+  <div class="text">
+   <label for ="Mon1">1st Period</label>
        <input type="time" name="Mon1"  />
-       
-        &nbsp;       
-
-       <label for ="Mon2">Mon 2nd Period:</label>
+  </div>
+  <div class="text">
+       <label for ="Mon2">2nd Period</label>
        <input type="time" name="Mon2"  />
 
-       &nbsp;       
-
-       <label for ="Mon3">Mon 3rd Period:</label>
-       <input type="time" name="Mon3"  /><br />
-
+              
+      </div>
+      <div class="text">
+       <label for ="Mon3">3rd Period</label>
+       <input type="time" name="Mon3"  /> 
+  </div>
              
-
-       <label for ="Mon4">Mon 4th Period:</label>
-       <input type="time" name="Mon4"/>
-
+  <div class="text">
+       <label for ="Mon4">4th Period</label>
+       <input type="time" name="Mon4"/> 
+  </div>
       
              
-
-       <label for ="Mon5">Mon 5th Period:</label>
+  <div class="text">
+       <label for ="Mon5">5th Period</label>
        <input type="time" name="Mon5"  />
 
-  &nbsp;       
-
-       <label for ="Mon6">Mon 6th Period:</label>
-       <input type="time" name="Mon6" /><br />
-
          
+  </div>
 
-       <label for ="Mon7">Mon 7th Period:</label>
+  <div class="text">
+       <label for ="Mon6">6th Period</label>
+       <input type="time" name="Mon6" />
+  </div>
+         
+  <div class="text">
+       <label for ="Mon7">7th Period</label>
        <input type="time" name="Mon7"  />
 
-  &nbsp;       
+         
+  </div>
 
-       <label for ="Mon8">Mon 8th Period:</label>
+  <div class="text">
+       <label for ="Mon8">8th Period</label>
        <input type="time" name="Mon8"  />
 
-         
-
-       <label for ="Mon9">Mon 9th Period:</label>
-       <input type="time" name="Mon9"  /><br />
-
+  </div>
+        <div class="text">
+       <label for ="Mon9">9th Period</label>
+       <input type="time" name="Mon9"  />
+        </div>
            
-
-       <label for ="Mon10">Mon 10th Period:</label>
+        <div class="text">
+       <label for ="Mon10">10th Period</label>
        <input type="time" name="Mon10"  />
 
-    &nbsp;       
+           
+</div>
 
-        <label for ="Mon11">Mon 11th Period:</label>
+<div class="text">
+        <label for ="Mon11">11th Period</label>
         <input type="time" name="Mon11"  />
 
-    &nbsp;       
-
-       <label for ="Mon12">Mon 12th Period:</label>
-       <input type="time" name="Mon12"  /><br />
-
-          
-
-       <label for ="Mon13">Mon 13th Period:</label>
-       <input type="time" name="Mon13"  /><br />
+           
 </div>
-    <h2> Tuesday </h2>
-      
 
-       <label for ="Tue1">Tue 1st Period:</label>
+<div class="text">
+       <label for ="Mon12">12th Period</label>
+       <input type="time" name="Mon12"  />
+
+</div>
+
+<div class="text">
+       <label for ="Mon13">13th Period</label>
+       <input type="time" name="Mon13"  />
+       </div>
+</div>
+<h2> Tuesday </h1>
+  <div class= "periods">
+  <div class="text">
+   <label for ="Tue1">1st Period</label>
        <input type="time" name="Tue1"  />
-
-       &nbsp;
-
-       <label for ="Tue2">Tue 2nd Period:</label>
+  </div>
+  <div class="text">
+       <label for ="Tue2">2nd Period</label>
        <input type="time" name="Tue2"  />
 
+              
+      </div>
+      <div class="text">
+       <label for ="Tue3">3rd Period</label>
+       <input type="time" name="Tue3"  /> 
+  </div>
+             
+  <div class="text">
+       <label for ="Tue4">4th Period</label>
+       <input type="time" name="Tue4"/> 
+  </div>
+      
+             
+  <div class="text">
+       <label for ="Tue5">5th Period</label>
+       <input type="time" name="Tue5"  />
 
-      &nbsp;
+         
+  </div>
 
-       <label for ="Tue3">Tue 3rd Period:</label>
-       <input type="time" name="Tue3"  /><br />
-
-   
-
-       <label for ="Tue4">Tue 4th Period:</label>
-       <input type="time" name="Tue4"  />
-
-  
-
-       <label for ="Tue5">Tue 5th Period:</label>
-       <input type="time" name="Tue5"  /> 
-
-       
-     &nbsp;
-
-       <label for ="Tue6">Tue 6th Period:</label>
-       <input type="time" name="Tue6"  /><br />
-
-
-    
-   
-
-       <label for ="Tue7">Tue 7th Period:</label>
+  <div class="text">
+       <label for ="Tue6">6th Period</label>
+       <input type="time" name="Tue6" />
+  </div>
+         
+  <div class="text">
+       <label for ="Tue7">7th Period</label>
        <input type="time" name="Tue7"  />
 
-     &nbsp;
+         
+  </div>
 
-       <label for ="Tue8">Tue 8th Period:</label>
+  <div class="text">
+       <label for ="Tue8">8th Period</label>
        <input type="time" name="Tue8"  />
 
-
-   
-
-       <label for ="Tue9">Tue 9th Period:</label>
-       <input type="time" name="Tue9"  /><br />
-
-
-       
-
-       <label for ="Tue10">Tue 10th Period:</label>
+  </div>
+        <div class="text">
+       <label for ="Tue9">9th Period</label>
+       <input type="time" name="Tue9"  />
+        </div>
+           
+        <div class="text">
+       <label for ="Tue10">10th Period</label>
        <input type="time" name="Tue10"  />
 
+           
+</div>
 
-     &nbsp;
+<div class="text">
+        <label for ="Tue11">11th Period</label>
+        <input type="time" name="Tue11"  />
 
-       <label for ="Tue11">Tue 11th Period:</label>
-       <input type="time" name="Tue11"  />
+           
+</div>
 
-   &nbsp;
+<div class="text">
+       <label for ="Tue12">12th Period</label>
+       <input type="time" name="Tue12"  />
 
-       <label for ="Tue12">Tue 12th Period:</label>
-       <input type="time" name="Tue12"  /><br />
+</div>
 
+<div class="text">
+       <label for ="Tue13">13th Period</label>
+       <input type="time" name="Tue13"  />
+       </div>
+</div>
+<h2> Wednesday </h1>
+  <div class= "periods">
+  <div class="text">
+   <label for ="Wed1">1st Period</label>
+       <input type="time" name="Wed1"  />
+  </div>
+  <div class="text">
+       <label for ="Wed2">2nd Period</label>
+       <input type="time" name="Wed2"  />
 
-       <label for ="Tue13">Tue 13th Period:</label>
-       <input type="time" name="Tue13"  /><br />
-
-  
-      <h2>Wednesday</h2>
+              
+      </div>
+      <div class="text">
+       <label for ="Wed3">3rd Period</label>
+       <input type="time" name="Wed3"  /> 
+  </div>
+             
+  <div class="text">
+       <label for ="Wed4">4th Period</label>
+       <input type="time" name="Wed4"/> 
+  </div>
       
-      <label for ="Wed1">Wed 1st Period:</label>
-       <input type="time" name="Wed1" />
+             
+  <div class="text">
+       <label for ="Wed5">5th Period</label>
+       <input type="time" name="Wed5"  />
 
-     &nbsp;
+         
+  </div>
 
-       <label for ="Wed2">Wed 2nd Period:</label>
-       <input type="time" name="Wed2" />
+  <div class="text">
+       <label for ="Wed6">6th Period</label>
+       <input type="time" name="Wed6" />
+  </div>
+         
+  <div class="text">
+       <label for ="Wed7">7th Period</label>
+       <input type="time" name="Wed7"  />
 
+         
+  </div>
 
-    &nbsp;
+  <div class="text">
+       <label for ="Wed8">8th Period</label>
+       <input type="time" name="Wed8"  />
 
-       <label for ="Wed3">Wed 3rd Period:</label>
-       <input type="time" name="Wed3" /><br />
+  </div>
+        <div class="text">
+       <label for ="Wed9">9th Period</label>
+       <input type="time" name="Wed9"  />
+        </div>
+           
+        <div class="text">
+       <label for ="Wed10">10th Period</label>
+       <input type="time" name="Wed10"  />
 
-   
+           
+</div>
 
-       <label for ="Wed4">Wed 4th Period:</label>
-       <input type="time" name="Wed4" />
+<div class="text">
+        <label for ="Wed11">11th Period</label>
+        <input type="time" name="Wed11"  />
 
+           
+</div>
 
+<div class="text">
+       <label for ="Wed12">12th Period</label>
+       <input type="time" name="Wed12"  />
 
-   
-       <label for ="Wed5">Wed 5th Period:</label>
-       <input type="time" name="Wed5" />
-        
-       &nbsp;
+</div>
 
-       <label for ="Wed6">Wed 6th Period:</label>
-       <input type="time" name="Wed6" /><br />
+<div class="text">
+       <label for ="Wed13">13th Period</label>
+       <input type="time" name="Wed13"  />
+       </div>
+</div>
+<h2> Thursday </h1>
+  <div class= "periods">
+  <div class="text">
+   <label for ="Thu1">1st Period</label>
+       <input type="time" name="Thu1"  />
+  </div>
+  <div class="text">
+       <label for ="Thu2">2nd Period</label>
+       <input type="time" name="Thu2"  />
+
+              
+      </div>
+      <div class="text">
+       <label for ="Thu3">3rd Period</label>
+       <input type="time" name="Thu3"  /> 
+  </div>
+             
+  <div class="text">
+       <label for ="Thu4">4th Period</label>
+       <input type="time" name="Thu4"/> 
+  </div>
       
+             
+  <div class="text">
+       <label for ="Thu5">5th Period</label>
+       <input type="time" name="Thu5"  />
 
+         
+  </div>
+
+  <div class="text">
+       <label for ="Thu6">6th Period</label>
+       <input type="time" name="Thu6" />
+  </div>
+         
+  <div class="text">
+       <label for ="Thu7">7th Period</label>
+       <input type="time" name="Thu7"  />
+
+         
+  </div>
+
+  <div class="text">
+       <label for ="Thu8">8th Period</label>
+       <input type="time" name="Thu8"  />
+
+  </div>
+        <div class="text">
+       <label for ="Thu9">9th Period</label>
+       <input type="time" name="Thu9"  />
+        </div>
+           
+        <div class="text">
+       <label for ="Thu10">10th Period</label>
+       <input type="time" name="Thu10"  />
+
+           
+</div>
+
+<div class="text">
+        <label for ="Thu11">11th Period</label>
+        <input type="time" name="Thu11"  />
+
+           
+</div>
+
+<div class="text">
+       <label for ="Thu12">12th Period</label>
+       <input type="time" name="Thu12"  />
+
+</div>
+
+<div class="text">
+       <label for ="Thu13">13th Period</label>
+       <input type="time" name="Thu13"  />
+       </div>
+</div>
+<h2> Friday </h1>
+  <div class= "periods">
+  <div class="text">
+   <label for ="Fri1">1st Period</label>
+       <input type="time" name="Fri1"  />
+  </div>
+  <div class="text">
+       <label for ="Fri2">2nd Period</label>
+       <input type="time" name="Fri2"  />
+
+              
+      </div>
+      <div class="text">
+       <label for ="Fri3">3rd Period</label>
+       <input type="time" name="Fri3"  /> 
+  </div>
+             
+  <div class="text">
+       <label for ="Fri4">4th Period</label>
+       <input type="time" name="Fri4"/> 
+  </div>
       
-
-       <label for ="Wed7">Wed 7th Period:</label>
-       <input type="time" name="Wed7" />
-
-
-      &nbsp;
-
-       <label for ="Wed8">Wed 8th Period:</label>
-       <input type="time" name="Wed8" />
-
-
-    
-
-       <label for ="Wed9">Wed 9th Period:</label>
-       <input type="time" name="Wed9" /><br />
-
-
-     
-
-       <label for ="Wed10">Wed 10th Period:</label>
-       <input type="time" name="Wed10" />
-
-
-    &nbsp;
-
-       <label for ="Wed11">Wed 11th Period:</label>
-       <input type="time" name="Wed11" />
-
-    &nbsp;
-
-       <label for ="Wed12">Wed 12th Period:</label>
-       <input type="time" name="Wed12" /><br />
-
-
-       <label for ="Wed13">Wed 13th Period:</label>
-       <input type="time" name="Wed13" /><br />
-
-
-
-       <h2> Thursady </h2>
-
-
-       <label for ="Thu1">Thu 1st Period:</label>
-       <input type="time" name="Thu1" />
-
-   &nbsp;
-
-       <label for ="Thu2">Thu 2nd Period:</label>
-       <input type="time" name="Thu2" />
-
-
-   &nbsp;
-
-       <label for ="Thu3">Thu 3rd Period:</label>
-       <input type="time" name="Thu3" /><br />
-
-   
-
-       <label for ="Thu4">Thu 4th Period:</label>
-       <input type="time" name="Thu4" />
-
-
-
-       <label for ="Thu5">Thu 5th Period:</label>
-       <input type="time" name="Thu5" />
-
-   &nbsp;
-
-       <label for ="Thu6">Thu 6th Period:</label>
-       <input type="time" name="Thu2" /><br />
-
-  
-
-       <label for ="Thu7">Thu 7th Period:</label>
-       <input type="time" name="Thu7" />
-
-   &nbsp;
-
-       <label for ="Thu8">Thu 8th Period:</label>
-       <input type="time" name="Thu8" />
-
-
-       <label for ="Thu9">Thu 9th Period:</label>
-       <input type="time" name="Thu9" /><br />
-
-  
-
-       <label for ="Thu10">Thu 10th Period:</label>
-       <input type="time" name="Thu10" />
-
-      &nbsp;
-
-       <label for ="Thu11">Thu 11th Period:</label>
-       <input type="time" name="Thu11" />
-
-    &nbsp;
-
-       <label for ="Thu12">Thu 12th Period:</label>
-       <input type="time" name="Thu12" /><br />
-
-
-   
-
-       <label for ="Thu13">Thu 13th Period:</label>
-       <input type="time" name="Thu13" /><br />
-
-       <h2> Friday </h2>
-
-
-       <label for ="Fri1">Fri 1st Period:</label>
-       <input type="time" name="Fri1" />
-
-       &nbsp;
-
- 
-       <label for ="Fri2">Fri2 2nd Period:</label>
-       <input type="time" name="Fri2" />
-
-     &nbsp;
-
- 
-       <label for ="Fri3">Fri 3rd Period:</label>
-       <input type="time" name="Fri3" /><br />
-
-
-    
-
- 
-       <label for ="Fri4">Fri 4th Period:</label>
-       <input type="time" name="Fri4" />
-
-
-
-
- 
-       <label for ="Fri5">Fri 5th Period:</label>
-       <input type="time" name="Fri5" />
-
-
-    &nbsp;
-
- 
-       <label for ="Fri6">Fri 6th Period:</label>
-       <input type="time" name="Fri6" /><br />
-
-
-   
-
- 
-       <label for ="Fri7">Fri 7th Period:</label>
-       <input type="time" name="Fri7" />
-
-
-   &nbsp;
-
- 
-       <label for ="Fri8">Fri 8th Period:</label>
-       <input type="time" name="Fri8" />
-
-
- 
-       <label for ="Fri9">Fri 9th Period:</label>
-       <input type="time" name="Fri9" /><br />
-
-  
-
- 
-       <label for ="Fri10">Fri 10th Period:</label>
-       <input type="time" name="Fri10" />
-
-
-   &nbsp;
-
- 
-       <label for ="Fri11">Fri 11th Period:</label>
-       <input type="time" name="Fri11" />
-
-
-    &nbsp;
-
- 
-       <label for ="Fri12">Fri 12th Period:</label>
-       <input type="time" name="Fri12" /><br />
-
-
-
-
- 
-       <label for ="Fri13" class="title">Fri 13th Period:</label>
-       <input type="time" name="Fri13" /><br />
-
+             
+  <div class="text">
+       <label for ="Fri5">5th Period</label>
+       <input type="time" name="Fri5"  />
+
+         
+  </div>
+
+  <div class="text">
+       <label for ="Fri6">6th Period</label>
+       <input type="time" name="Fri6" />
+  </div>
+         
+  <div class="text">
+       <label for ="Fri7">7th Period</label>
+       <input type="time" name="Fri7"  />
+
+         
+  </div>
+
+  <div class="text">
+       <label for ="Fri8">8th Period</label>
+       <input type="time" name="Fri8"  />
+
+  </div>
+        <div class="text">
+       <label for ="Fri9">9th Period</label>
+       <input type="time" name="Fri9"  />
+        </div>
+           
+        <div class="text">
+       <label for ="Fri10">10th Period</label>
+       <input type="time" name="Fri10"  />
+
+           
+</div>
+
+<div class="text">
+        <label for ="Fri11">11th Period</label>
+        <input type="time" name="Fri11"  />
+
+           
+</div>
+
+<div class="text">
+       <label for ="Fri12">12th Period</label>
+       <input type="time" name="Fri12"  />
+
+</div>
+
+<div class="text">
+       <label for ="Fri13">13th Period</label>
+       <input type="time" name="Fri13"  />
+       </div>
+</div>
 
        <label for = pass class=title >Password:</label>
        <input type=password name= pass />

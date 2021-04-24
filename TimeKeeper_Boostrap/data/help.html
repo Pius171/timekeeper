@@ -29,6 +29,10 @@
           font-size: 3.5rem;
         }
       }
+
+      .step-one,.step-two{
+        margin-bottom: 30px;
+      }
     </style>
 
     
@@ -36,48 +40,79 @@
     <link href="styles.css" rel="stylesheet">
   </head>
   <body>
+    <div class="bg-image" > </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
     
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-      <ul class="navbar-nav me-auto mb-2 mb-md-0">
-        <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact">Contact us/Donate</a>
-        </li>
-    
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="Update">Update</a></li>
-            <li><a class="dropdown-item" href="delete">Delete period(s)</a></li>
-            <li><a class="dropdown-item" href="help">User manual</a></li>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="help.html">User manual</a>
+            </li>
+        
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="timeUpdate.html">Update</a></li>
+                <li><a class="dropdown-item" href="delete.html">Delete period(s)</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
+              </ul>
+            </li>
           </ul>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+        </div>
+      </div>
+    </nav>
 
 <main class="container">
 
-  <div class="starter-template text-center py-5 px-3">
+  <div class="starter-template  py-5 px-3">
     
-<h1>User Manual</h1>
-    
-<p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
   
+    <h1 class="text-center">User Manual</h1>
+    
+<p  >
+  <div class="update">
+  
+  <h2 class="dropdown-toggle"  id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" style="width: 50%;">Updating the time table</h2>
+  <div class="dropdown-menu" aria-labelledby="dropdown01">
+  <ul class="" >
+<li class="step-one"> From the navigation bar click on Tools, then click on Update</li>
+<li class="step-two"> You will now be in the update page, click on the time input boxes on any of the periods to set its time. If you have lesser than 13 periods in your school leave the remaining periods empty.
+
+  <br/> Note: The time input box will show type in 24 hour format, meaning 13:00 is 1pm, 14:00 is 2pm and 9:00 is 9am
+</li>
+<li class="update-step-three">Step three: Scroll to the end of the page, you will see a password input box, this allows you to give your timekeeper a password
+  so that not just anyone can access it, it can also be used to change your password, if you have one already.Then click the upload button to send the time you sent and your password to the timekeeper. If it saved successfully it will
+  take you a page, where you will see a text "(time)Saved to file system click Home to go back to home page" Then click on the text Home to go back to the home page. You should see the time you set on the home page time table.
+</li>
+  </ul>
+</div>
+</div>
+
+
+
+  <div class="delete dropdown">
+  <h2 class="dropdown-toggle"  id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false" style="width: 50%;">Deleting period(s)</h2>
+  <div class="dropdown-menu" aria-labelledby="dropdown01">
+  <ul class="">
+    <li class="step-one" >In the Home page click on Tools then click on Delete period(s)</li>
+    <li class="step-two">Then click on the period you want to delete, you will then see a notification saying "period deleted"</li>
+  </ul>
+</div>
+</div>
+
+
+
+    
+</p>
+
 
 </div>
 

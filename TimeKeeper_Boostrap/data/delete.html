@@ -8,7 +8,7 @@
     <meta name="generator" content="Hugo 0.79.0">
     <title>Delete period(s)</title>
 
-    <link rel="canonical" href=#">
+    <link rel="canonical" href=#>
 
     
 
@@ -28,16 +28,19 @@
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
-      }
+        a:hover{
+          color: #fc6444;
+        }
+		
     </style>
 
     
     <!-- Custom styles for this template -->
     <link href="styles.css" rel="stylesheet">
   </head>
-  <body>
-    
-<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <body onload="getPeriods()">
+    <div class="bg-image" > </div>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Pius Electronics Time Keeper</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,25 +50,21 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
       <ul class="navbar-nav me-auto mb-2 mb-md-0">
         <li class="nav-item active">
-          <a class="nav-link" aria-current="page" href="home">Home</a>
+          <a class="nav-link" aria-current="page" href="home.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="contact">Contact us/Donate</a>
-        </li>
-    
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
-          <ul class="dropdown-menu" aria-labelledby="dropdown01">
-            <li><a class="dropdown-item" href="Update">Update</a></li>
-            <li><a class="dropdown-item" href="delete">Delete period(s)</a></li>
-            <li><a class="dropdown-item" href="help">User manual</a></li>
+          <a class="nav-link" href="help.html">User manual</a>
+            </li>
+        
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">Tools</a>
+              <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                <li><a class="dropdown-item" href="timeUpdate.html">Update</a></li>
+                <li><a class="dropdown-item" href="delete.html">Delete period(s)</a></li>
+                <li><a class="dropdown-item" href="contact.html">Contact us</a></li>
           </ul>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
     </div>
   </div>
 </nav>
@@ -84,12 +83,12 @@
  <h1>Monday</h1>
   
 <p>
-<a class="btn btn-dark del"  id="delMon1">1st Period</a> &nbsp; <a class="btn btn-dark del" id="delMon2">2nd Period</a> &nbsp; <a class="btn btn-dark del"  id="delMon3">3rd Period</a> &nbsp;
-<a class= "btn btn-dark del" id="delMon4">4th Period</a> &nbsp; <a class="btn btn-dark del" id="delMon5">5th Period</a> &nbsp; <a class="btn btn-dark del" id="delMon6">6th Period</a>&nbsp;
-<a class="btn btn-dark del" id="delMon7">7th Period</a> &nbsp; <a  class="btn btn-dark del" id="delMon8">8th Period</a></p> 
+<a class="btn  del"  id="Mon1">1st Period</a> &nbsp; <a class="btn  del" id="Mon2">2nd Period</a> &nbsp; <a class="btn  del"  id="Mon3">3rd Period</a> &nbsp;
+<a class= "btn  del" id="Mon4">4th Period</a> &nbsp; <a class="btn  del" id="Mon5">5th Period</a> &nbsp; <a class="btn  del" id="Mon6">6th Period</a>&nbsp;
+<a class="btn  del" id="Mon7">7th Period</a> &nbsp; <a  class="btn  del" id="Mon8">8th Period</a></p> 
 <br/>
 <p> 
-<a class="btn btn-dark del" id="delMon9">9th Period</a>&nbsp; <a class="btn btn-dark del" id="delMon10">10th Period</a> &nbsp;<a class="btn btn-dark del" id="delMon11">11th Period</a>&nbsp; <a class="btn btn-dark del" id="delMon12">12th Period</a> &nbsp; <a class="btn btn-dark del" id="delMon13">13th Period</a> &nbsp;
+<a class="btn  del" id="Mon9">9th Period</a>&nbsp; <a class="btn  del" id="Mon10">10th Period</a> &nbsp;<a class="btn  del" id="Mon11">11th Period</a>&nbsp; <a class="btn  del" id="Mon12">12th Period</a> &nbsp; <a class="btn  del" id="Mon13">13th Period</a> &nbsp;
 
 </p>
 </div>
@@ -98,12 +97,12 @@
  <h1>Tuesday</h1>
   
 <p>
-<a class="btn btn-dark del"  id="delTue1">1st Period</a> &nbsp; <a class="btn btn-dark del" id="delTue2">2nd Period</a> &nbsp; <a class="btn btn-dark del"  id="delTue3">3rd Period</a> &nbsp;
-<a class= "btn btn-dark del" id="delTue4">4th Period</a> &nbsp; <a class="btn btn-dark del" id="delTue5">5th Period</a> &nbsp; <a class="btn btn-dark del" id="delTue6">6th Period</a>&nbsp;
-<a class="btn btn-dark del" id="delTue7">7th Period</a> &nbsp; <a  class="btn btn-dark del" id="delTue8">8th Period</a></p> 
+<a class="btn  del"  id="Tue1">1st Period</a> &nbsp; <a class="btn  del" id="Tue2">2nd Period</a> &nbsp; <a class="btn  del"  id="Tue3">3rd Period</a> &nbsp;
+<a class= "btn  del" id="Tue4">4th Period</a> &nbsp; <a class="btn  del" id="Tue5">5th Period</a> &nbsp; <a class="btn  del" id="Tue6">6th Period</a>&nbsp;
+<a class="btn  del" id="Tue7">7th Period</a> &nbsp; <a  class="btn  del" id="Tue8">8th Period</a></p> 
 <br/>
 <p> 
-<a class="btn btn-dark del" id="delTue9">9th Period</a>&nbsp; <a class="btn btn-dark del" id="delTue10">10th Period</a> &nbsp;<a class="btn btn-dark del" id="delTue11">11th Period</a>&nbsp; <a class="btn btn-dark del" id="delTue12">12th Period</a> &nbsp; <a class="btn btn-dark del" id="delTue13">13th Period</a> &nbsp;
+<a class="btn  del" id="Tue9">9th Period</a>&nbsp; <a class="btn  del" id="Tue10">10th Period</a> &nbsp;<a class="btn  del" id="Tue11">11th Period</a>&nbsp; <a class="btn  del" id="Tue12">12th Period</a> &nbsp; <a class="btn  del" id="Tue13">13th Period</a> &nbsp;
 
 </p>
 </div>
@@ -112,12 +111,12 @@
  <h1>Wednesday</h1>
   
 <p>
-<a class="btn btn-dark del"  id="delWed1">1st Period</a> &nbsp; <a class="btn btn-dark del" id="delWed2">2nd Period</a> &nbsp; <a class="btn btn-dark del"  id="delWed3">3rd Period</a> &nbsp;
-<a class= "btn btn-dark del" id="delWed4">4th Period</a> &nbsp; <a class="btn btn-dark del" id="delWed5">5th Period</a> &nbsp; <a class="btn btn-dark del" id="delWed6">6th Period</a>&nbsp;
-<a class="btn btn-dark del" id="delWed7">7th Period</a> &nbsp; <a  class="btn btn-dark del" id="delWed8">8th Period</a></p> 
+<a class="btn  del"  id="Wed1">1st Period</a> &nbsp; <a class="btn  del" id="Wed2">2nd Period</a> &nbsp; <a class="btn  del"  id="Wed3">3rd Period</a> &nbsp;
+<a class= "btn  del" id="Wed4">4th Period</a> &nbsp; <a class="btn  del" id="Wed5">5th Period</a> &nbsp; <a class="btn  del" id="Wed6">6th Period</a>&nbsp;
+<a class="btn  del" id="Wed7">7th Period</a> &nbsp; <a  class="btn  del" id="Wed8">8th Period</a></p> 
 <br/>
 <p> 
-<a class="btn btn-dark del" id="delWed9">9th Period</a>&nbsp; <a class="btn btn-dark del" id="delWed10">10th Period</a> &nbsp;<a class="btn btn-dark del" id="delWed11">11th Period</a>&nbsp; <a class="btn btn-dark del" id="delWed12">12th Period</a> &nbsp; <a class="btn btn-dark del" id="delWed13">13th Period</a> &nbsp;
+<a class="btn  del" id="Wed9">9th Period</a>&nbsp; <a class="btn  del" id="Wed10">10th Period</a> &nbsp;<a class="btn  del" id="Wed11">11th Period</a>&nbsp; <a class="btn  del" id="Wed12">12th Period</a> &nbsp; <a class="btn  del" id="Wed13">13th Period</a> &nbsp;
 
 </p>
 </div>
@@ -126,12 +125,12 @@
  <h1>Thursday</h1>
   
 <p>
-<a class="btn btn-dark del"  id="delThu1">1st Period</a> &nbsp; <a class="btn btn-dark del" id="delThu2">2nd Period</a> &nbsp; <a class="btn btn-dark del"  id="delThu3">3rd Period</a> &nbsp;
-<a class= "btn btn-dark del" id="delThu4">4th Period</a> &nbsp; <a class="btn btn-dark del" id="delThu5">5th Period</a> &nbsp; <a class="btn btn-dark del" id="delThu6">6th Period</a>&nbsp;
-<a class="btn btn-dark del" id="delThu7">7th Period</a> &nbsp; <a  class="btn btn-dark del" id="delThu8">8th Period</a></p> 
+<a class="btn  del"  id="Thu1">1st Period</a> &nbsp; <a class="btn  del" id="Thu2">2nd Period</a> &nbsp; <a class="btn  del"  id="Thu3">3rd Period</a> &nbsp;
+<a class= "btn  del" id="Thu4">4th Period</a> &nbsp; <a class="btn  del" id="Thu5">5th Period</a> &nbsp; <a class="btn  del" id="Thu6">6th Period</a>&nbsp;
+<a class="btn  del" id="Thu7">7th Period</a> &nbsp; <a  class="btn  del" id="Thu8">8th Period</a></p> 
 <br/>
 <p> 
-<a class="btn btn-dark del" id="delThu9">9th Period</a>&nbsp; <a class="btn btn-dark del" id="delThu10">10th Period</a> &nbsp;<a class="btn btn-dark del" id="delThu11">11th Period</a>&nbsp; <a class="btn btn-dark del" id="delThu12">12th Period</a> &nbsp; <a class="btn btn-dark del" id="delThu13">13th Period</a> &nbsp;
+<a class="btn  del" id="Thu9">9th Period</a>&nbsp; <a class="btn  del" id="Thu10">10th Period</a> &nbsp;<a class="btn  del" id="Thu11">11th Period</a>&nbsp; <a class="btn  del" id="Thu12">12th Period</a> &nbsp; <a class="btn  del" id="Thu13">13th Period</a> &nbsp;
 
 </p>
 </div>
@@ -141,12 +140,12 @@
  <h1>Friday</h1>
   
 <p>
-<a class="btn btn-dark del"  id="delFri1">1st Period</a> &nbsp; <a class="btn btn-dark del" id="delFri2">2nd Period</a> &nbsp; <a class="btn btn-dark del"  id="delFri3">3rd Period</a> &nbsp;
-<a class= "btn btn-dark del" id="delFri4">4th Period</a> &nbsp; <a class="btn btn-dark del" id="delFri5">5th Period</a> &nbsp; <a class="btn btn-dark del" id="delFri6">6th Period</a>&nbsp;
-<a class="btn btn-dark del" id="delFri7">7th Period</a> &nbsp; <a  class="btn btn-dark del" id="delFri8">8th Period</a></p> 
+<a class="btn  del"  id="Fri1">1st Period</a> &nbsp; <a class="btn  del" id="Fri2">2nd Period</a> &nbsp; <a class="btn  del"  id="Fri3">3rd Period</a> &nbsp;
+<a class= "btn  del" id="Fri4">4th Period</a> &nbsp; <a class="btn  del" id="Fri5">5th Period</a> &nbsp; <a class="btn  del" id="Fri6">6th Period</a>&nbsp;
+<a class="btn  del" id="Fri7">7th Period</a> &nbsp; <a  class="btn  del" id="Fri8">8th Period</a></p> 
 <br/>
 <p> 
-<a class="btn btn-dark del" id="delFri9">9th Period</a>&nbsp; <a class="btn btn-dark del" id="delFri10">10th Period</a> &nbsp;<a class="btn btn-dark del" id="delFri11">11th Period</a>&nbsp; <a class="btn btn-dark del" id="delFri12">12th Period</a> &nbsp; <a class="btn btn-dark del" id="delFri13">13th Period</a> &nbsp;
+<a class="btn  del" id="Fri9">9th Period</a>&nbsp; <a class="btn  del" id="Fri10">10th Period</a> &nbsp;<a class="btn  del" id="Fri11">11th Period</a>&nbsp; <a class="btn  del" id="Fri12">12th Period</a> &nbsp; <a class="btn  del" id="Fri13">13th Period</a> &nbsp;
 
 </p>
 
@@ -161,21 +160,46 @@
 <script src="bootstrap.bundle.min.js"></script>
 
 <script>
-
+  let myObj;
+  let myString;
+  var xhttp = new XMLHttpRequest();
 function deletes(e){
 e.preventDefault();
 console.log(e.target.id);
-var xhttp = new XMLHttpRequest();
 
-xhttp.open("GET",e.target.id, true);
-xhttp.send();
+delete myObj[e.target.id]
+xhttp.open("POST","delperiod", true);
+myString= JSON.stringify(myObj);
+console.log(myString)
+xhttp.setRequestHeader("Content-type", "text/plain");
+xhttp.send(myString);
 alert("!Period deleted");
 }
 
 const allButtons = document.querySelectorAll(".del");
 allButtons.forEach(button => button.addEventListener("click", deletes));
 
+function getPeriods(){
 
+var periodsJson;
+var Array = [];
+xhttp.onreadystatechange=
+       function(){
+	   if(this.readyState ==4 && this.status == 200){
+	   
+	    myObj= JSON.parse(this.responseText);
+      myString= JSON.stringify(myObj);
+	   console.log(myObj);
+	  console.log(myString);
+	   
+		
+	   console.log("success");   
+	   } 
+	   };
+
+xhttp.open("GET","getPeriods", true);
+xhttp.send();
+}
 
 
 

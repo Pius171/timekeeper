@@ -1,3 +1,36 @@
 body {
   padding-top: 5rem;
+  
+
+
 }
+img.bg-image{
+	width: 140px;
+	height: 70px;
+	float: right;
+	margin: 10px;
+}
+@font-face {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+
+  
+}
+
+
+h1, h2{
+		font-family: "Times New Roman", Times, serif
+		color:#fc6444;
+		}
+		p{
+		font-family: open sans;
+		}
+		
+		.navbar{
+		    background-color: #7a5648!important;
+      }
+	  
+	  .btn{
+	  background-color:#fc6444;
+	  color:white;
+	  }
